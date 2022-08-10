@@ -125,3 +125,55 @@ myArray.push(["dog", 3]);
 14
 const myArray = [["John", 23], ["cat", 2]];
 const removedFromMyArray = myArray.pop();
+
+15
+const myArray = [["John", 23], ["dog", 3]];
+const removedFromMyArray = myArray.shift();
+
+16
+const myArray = [["John", 23], ["dog", 3]];
+myArray.shift();
+myArray.unshift(["Paul", 35]);
+
+17
+function reusableFunction() {
+  console.log("Hi World");
+}
+reusableFunction()
+
+18
+function functionWithArgs(param1, param2) {
+  console.log(param1 + param2);
+}
+functionWithArgs (1,2);
+functionWithArgs (7,9);
+
+19
+function timesFive(num) {
+  return num * 5;
+}
+
+const answer = timesFive(5);
+
+20
+// Declare the myGlobal variable below this line
+let myGlobal = 10;
+
+function fun1() {
+  oopsGlobal = 5;
+  // Assign 5 to oopsGlobal Here
+
+}
+
+// Only change code above this line
+
+function fun2() {
+  var output = "";
+  if (typeof myGlobal != "undefined") {
+    output += "myGlobal: " + myGlobal;
+  }
+  if (typeof oopsGlobal != "undefined") {
+    output += " oopsGlobal: " + oopsGlobal;
+  }
+  console.log(output);
+}
