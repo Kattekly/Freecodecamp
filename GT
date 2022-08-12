@@ -720,3 +720,27 @@ const myDog = {
 
 // Only change code below this line
 myDog.name = "Happy Coder";
+
+55
+Добавление свойств
+const myDog = {
+  "name": "Happy Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"]
+};
+
+myDog.bark = "bow";
+
+56
+удаление свойства
+const myDog = {
+  "name": "Happy Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"],
+  "bark": "woof"
+};
+
+// Only change code below this line
+delete myDog.tails;
