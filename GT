@@ -661,3 +661,14 @@ switch (card) {
 }
 
 cc(2); cc(3); cc(7); cc('K'); cc('A');
+
+50
+const myDog = {
+  // Only change code below this line
+name: "Runny",
+legs: 4,
+tails: 2,
+friends: ["cat", "snow"]
+
+  // Only change code above this line
+};
