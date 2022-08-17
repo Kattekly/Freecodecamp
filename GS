@@ -1170,3 +1170,7 @@ const LOCAL_FORECAST = {
 // Only change code below this line
   
 const { today: { low: lowToday, high: highToday}} = LOCAL_FORECAST
+
+90
+let a = 8, b = 6;
+[a, b] = [b, a];
