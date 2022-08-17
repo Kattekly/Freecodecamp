@@ -1318,3 +1318,112 @@ let result = chewieQuote.match(chewieRegex);
 let text = "<h1>Winter is coming</h1>";
 let myRegex = /<.*?>/; // Change this line
 let result = text.match(myRegex);
+
+109
+Поиск шаблона в начале строки (^)
+let rickyAndCal = "Cal and Ricky both like racing.";
+let calRegex = /^Cal/; // Change this line
+let result = calRegex.test(rickyAndCal);
+
+110
+Сопоставление шаблона в конце строки ($)
+let caboose = "The last car on a train is the caboose";
+let lastRegex = /caboose$/; // Change this line
+let result = lastRegex.test(caboose);
+
+111
+Сопоставить все буквы и цифры (\w)
+let quoteSample = "The five boxing wizards jump quickly.";
+let alphabetRegexV2 = /\w/g; // Change this line
+let result = quoteSample.match(alphabetRegexV2).length;
+
+112
+Сопоставить все, кроме букв и цифр (\W)
+let quoteSample = "The five boxing wizards jump quickly.";
+let nonAlphabetRegex = /\W/g; // Change this line
+let result = quoteSample.match(nonAlphabetRegex).length;
+
+113
+Совпадение по всем числам (\d)
+let movieName = "2001: A Space Odyssey";
+let numRegex = /\d/g; // Change this line
+let result = movieName.match(numRegex).length;
+
+114
+Совпадение по всем нечисловым значения (\D)
+let movieName = "2001: A Space Odyssey";
+let noNumRegex = /\D/g; // Change this line
+let result = movieName.match(noNumRegex).length;
+
+115
+Ограничение имен
+let username = "JackOfAllTrades";
+let userCheck = /^[a-z][a-z]+\d*$|^[a-z]\d\d+$/i
+let result = userCheck.test(username);
+
+116
+Поиск пробелов (\s)
+let sample = "Whitespace is important in separating words";
+let countWhiteSpace = /\s/g; // Change this line
+let result = sample.match(countWhiteSpace);
+
+117
+Поиск без пробелов (\S)
+let sample = "Whitespace is important in separating words";
+let countNonWhiteSpace = /\S/g; // Change this line
+let result = sample.match(countNonWhiteSpace);
+
+118
+Верхнее и нижнее количество совпадений
+let ohStr = "Ohhh no";
+let ohRegex = /Oh{3,6}\sno/
+
+119
+Только нижнее количество
+let haStr = "Hazzzzah";
+let haRegex = /Haz{4,}ah/g; // Change this line
+
+120
+Точное кол-во совпадений
+let timStr = "Timmmmber";
+let timRegex = /Tim{4}ber/; // Change this line
+let result = timRegex.test(timStr);
+
+121
+Проверить возможность
+let favWord = "favorite";
+let favRegex = /favou?rite/; // Change this line
+let result = favRegex.test(favWord);
+
+122
+Проверка пароля
+let sampleWord = "astronaut";
+let pwRegex = /(?=\w{6,})(?=\w*\d{2})/; // Change this line
+let result = pwRegex.test(sampleWord);
+
+123
+Смешанная группировка
+let myString = "Eleanor Roosevelt";
+let myRegex = /(Eleanor|Franklin).*Roosevelt/; // Change this line
+let result = myRegex.test(myString);
+let result = haRegex.test(haStr);
+let result = ohRegex.test(ohStr);
+
+124
+Поиск одинаковых фрагментов с помощью групп захвата
+let repeatNum = "42 42 42";
+let reRegex = /^(\d+)\s\1\s\1$/;
+let result = reRegex.test(repeatNum);
+
+125
+Сопаставить и поменять местами
+let str = "one two three";
+let fixRegex = /(\w+)\s(\w+)\s(\w+)/
+let replaceText = "$3 $2 $1"
+let result = str.replace(fixRegex, replaceText);
+
+126
+удалить пробелы в начале и конце строки
+let hello = "   Hello, World!  ";
+let wsRegex = /^\s+|\s+$/g; // Change this line
+let result = hello.replace(wsRegex, ""); // Change this line
