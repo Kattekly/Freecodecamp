@@ -1232,3 +1232,26 @@ function makeList(arr) {
 }
 
 const failuresList = makeList(result.failure);
+
+95
+Hегулярные выражения. поиск слова или букв внутри строки
+let myString = "Hello, World!";
+let myRegex = /Hello/;
+let result = myRegex.test(myString);
+
+96
+let waldoIsHiding = "Somewhere Waldo is hiding in this text.";
+let waldoRegex = /Waldo/; // Change this line
+let result = waldoRegex.test(waldoIsHiding);
+
+97
+Поиск нескольких стлов в строке
+let petString = "James has a pet cat.";
+let petRegex = /dog|cat|bird|fish/; // Change this line
+let result = petRegex.test(petString);
+
+98
+Поиск слов бе учета регистра (i)
+let myString = "freeCodeCamp";
+let fccRegex = /freeCodeCamp/i; // Change this line
+let result = fccRegex.test(myString);
