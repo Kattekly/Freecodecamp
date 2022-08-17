@@ -287,3 +287,14 @@ a:hover {
 
 </style>
 <a href="https://freecatphotoapp.com/" target="_blank">CatPhotoApp</a>
+
+17
+<style>
+  div {
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+margin: auto;
+  }
+</style>
+<div></div>
