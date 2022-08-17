@@ -1234,7 +1234,7 @@ function makeList(arr) {
 const failuresList = makeList(result.failure);
 
 95
-Hегулярные выражения. поиск слова или букв внутри строки
+Hегулярные выражения. поиск слова или букв внутри строки. Метод.test
 let myString = "Hello, World!";
 let myRegex = /Hello/;
 let result = myRegex.test(myString);
@@ -1255,3 +1255,21 @@ let result = petRegex.test(petString);
 let myString = "freeCodeCamp";
 let fccRegex = /freeCodeCamp/i; // Change this line
 let result = fccRegex.test(myString);
+
+99
+Найти совпадение и вывести само слово. Метод .match
+let extractStr = "Extract the word 'coding' from this string.";
+let codingRegex = /coding/;
+let result = extractStr.match(codingRegex);
+
+100
+Поиск и вывод нескольких одинаковых вхождений (g)
+let twinkleStar = "Twinkle, twinkle, little star";
+let starRegex = /Twinkle/ig; // Change this line
+let result = twinkleStar.match(starRegex); // Change this line
+
+101
+Подстановочный знак (.) для поиска однотипных констуркций
+let exampleStr = "Let's have fun with regular expressions!";
+let unRegex = /.un/; // Change this line
+let result = unRegex.test(exampleStr);
