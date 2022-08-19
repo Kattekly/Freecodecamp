@@ -174,3 +174,34 @@ function quickCheck(arr, elem) {
 }
 
 console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
+
+18
+Убрать массив если в нем есть elem
+function filteredArray(arr, elem) {
+  let newArr = [];
+  // Only change code below this line
+for (let i = 0; i < arr.length; i++) {
+    if (arr[i].indexOf(elem) == -1) {
+      newArr.push(arr[i]);
+}
+  }
+  // Only change code above this line
+  return newArr;
+}
+
+19
+Добавление эл-тов в массив
+let foods = {
+  apples: 25,
+  oranges: 32,
+  plums: 28
+};
+
+// Only change code below this line
+foods.bananas = 13;
+foods.grapes = 35;
+foods.strawberries = 27;
+// Only change code above this line
+
+console.log(foods);
+console.log(filteredArray([[3, 2, 3], [1, 6, 3], [3, 13, 26], [19, 3, 9]], 3));
