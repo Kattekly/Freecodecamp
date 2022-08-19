@@ -374,3 +374,44 @@ function addFriend(userObj, friend) {
 
 console.log(addFriend(user, 'Pete'));
 console.log(foods);
+
+27
+function convertCtoF(celsius) {
+  let fahrenheit = celsius*9/5 + 32;
+  return fahrenheit;
+}
+
+convertCtoF(30);
+
+28
+function reverseString(str) {
+  const reverseStr = str.split('').reverse('').join('');
+  return reverseStr;
+}
+
+reverseString("hello");
+
+29
+function factorialize(num) {
+  if (num === 0) {
+    return 1;
+  }
+  return num * factorialize(num - 1);
+}
+
+factorialize(5);
+
+30
+Найти самое длинное слово в строке
+function findLongestWordLength(str) {
+  let words = str.split(' ');
+  let maxLength = 0;
+
+  for (let i = 0; i < words.length; i++) {
+    if (words[i].length > maxLength) {
+      maxLength = words[i].length;
+    }
+  }
+
+  return maxLength;
+}
