@@ -448,3 +448,19 @@ function Dog() {
   this.numLegs = 4;
 }
 let hound = new Dog();
+
+34
+function Dog(name, color) {
+this.name = name;
+  this.color = color;
+  this.numLegs = 4;
+}
+let terrier = new Dog();
+let cardinal = new Dog("Bruce", "red");
+
+35
+function House(numBedrooms) {
+  this.numBedrooms = numBedrooms;
+}
+let myHouse = new House(3);
+myHouse instanceof House;
