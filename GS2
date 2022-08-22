@@ -464,3 +464,52 @@ function House(numBedrooms) {
 }
 let myHouse = new House(3);
 myHouse instanceof House;
+
+36
+function Bird(name) {
+  this.name = name;
+  this.numLegs = 2;
+}
+
+let canary = new Bird("Tweety");
+let ownProps = [];
+for (let property in canary) {
+  if(canary.hasOwnProperty(property)) {
+    ownProps.push(property);
+  }
+}
+
+console.log(ownProps);
+
+37
+function Dog(name) {
+  this.name = name;
+}
+
+
+Dog.prototype.numLegs = 4;
+// Only change code above this line
+let beagle = new Dog("Snoopy");
+
+38
+function Dog(name) {
+  this.name = name;
+}
+
+Dog.prototype.numLegs = 4;
+
+let beagle = new Dog("Snoopy");
+
+let ownProps = [];
+let prototypeProps = [];
+
+for (let property in beagle) {
+  if(beagle.hasOwnProperty(property)) {
+    ownProps.push(property);
+  } else {
+    prototypeProps.push(property);
+  }
+}
+
+console.log(ownProps);
+console.log(prototypeProps);
