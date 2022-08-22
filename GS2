@@ -793,3 +793,13 @@ const bicycle = {
 // Only change code above this line
 bicycle.setGear(3);
 console.log(bicycle.gear);
+
+58
+class Vegetable {
+  constructor(name) {
+    this.name = name;
+  }
+}
+
+const carrot = new Vegetable('carrot');
+console.log(carrot.name); // Should display 'carrot'
