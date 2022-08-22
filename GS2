@@ -433,3 +433,18 @@ let dog = {
 };
 
 dog.sayLegs();
+
+32
+function Dog() {
+  this.name = "Albert";
+  this.color = "red";
+  this.numLegs = 4;
+}
+
+33
+function Dog() {
+  this.name = "Rupert";
+  this.color = "brown";
+  this.numLegs = 4;
+}
+let hound = new Dog();
